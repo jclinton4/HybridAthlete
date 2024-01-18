@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hybrid Athlete</title>
+  </head>
+  <body>
+    <main>
+        <h1>Hybrid Athlete Workout Tracker</h1>
+        <hr>
+        <div>
+            <a href="/index.html">Home</a> <a href="/newworkout.html">New Workout</a> <a href="/savedworkouts.html">Saved Workouts</a>
+            <form>
+                <h3>Enter a new Workout</h3>
+                <fieldset>
+                    <legend>Exercise</legend>
+                    <input id="movementName" placeholder="Name"/>
+                    <input id="sets" placeholder="Sets"/>
+                    <input id="reps" placeholder="Reps"/>
+                    <input id="weight" placeholder="Weight"/>
+                    <br>
+                    <button id="addMovement">Add Movement</button>
+                    <button id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+        <div id="workoutList" class="hide">
+        </div>
+    </main>
+    <script src="./newworkout.js"></script>
+  </body>
+</html>

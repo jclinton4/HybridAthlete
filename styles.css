@@ -1,0 +1,125 @@
+h1, form, a, h3, ul, li {
+    text-align: center;
+}
+
+body {
+    width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.hide {
+    display: none;
+  }
+
+
+/* <!-- Delete --!> */
+.button1 {
+    background: transparent;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: var(--root-font-size);
+    outline-color: var(--highlight-color);
+    text-align: center;
+  }
+.playlist-song {
+    outline-color: var(--highlight-color);
+  }
+  
+  .playlist li:not(:last-child) {
+    border-bottom: 1px solid var(--background-color);
+  }
+  
+  button:focus,
+  .playlist-song:focus {
+    outline-style: dashed;
+    outline-width: 2px;
+  }
+  
+  /* Playlist */
+  .playlist {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  
+  #playlist-songs {
+    width: 430px;
+    height: 100%;
+    background-color: var(--foreground-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    padding: 8px 9px;
+    visibility: visible;
+    justify-content: start;
+    list-style: none;
+  }
+  
+  .playlist-song {
+    display: flex;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+.playlist-song-info {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 7px;
+    padding: 5px 0;
+    font-family: var(--font-family);
+  }
+  
+  #player-song-title,
+  #player-song-artist {
+    margin: 0;
+  }
+  
+  #player-song-artist {
+    color: var(--highlight-color);
+    font-size: 0.75rem;
+  }
+  
+  #player-song-title {
+    font-size: 1.125rem;
+  }
+  
+  .playlist-song-title {
+    font-size: 0.85rem;
+    width: 241px;
+    text-align: left;
+  }
+  
+  .playlist-song-artist {
+    font-size: 0.725rem;
+    width: 80px;
+  }
+  
+  .playlist-song-duration {
+    font-size: 0.725rem;
+    margin: auto;
+    font-family: var(--font-headline);
+    width: 30px;
+  }
+  
+  .playlist-song-delete {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .playlist-song-delete,
+  .playlist-song-delete {
+    fill: var(--foreground-color);
+  }
