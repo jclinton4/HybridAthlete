@@ -40,11 +40,6 @@ const addOrUpdateWorkout = () => {
 };
 
 const updateWorkoutContainer = () => {
-    workoutContainer.innerHTML = (`
-    <div>
-        <button onclick="clearForm(this)" type="button" class="btn">Delete All</button>
-    </div>
-    `);
 
     workouts.forEach(
         ({id, exercise, sets, reps, weight}) => {
@@ -54,12 +49,18 @@ const updateWorkoutContainer = () => {
                 <p><strong>Sets:</strong> ${sets}</p>
                 <p><strong>Reps:</strong> ${reps}</p>
                 <p><strong>Weight:</strong> ${weight}</p>
-                <button onclick="editWorkout(this)" type="button" class="btn">Edit</button>
-                <button onclick="deleteWorkout(this)" type="button" class="btn">Delete</button> 
+                <button onclick="editWorkout(this)" type="button">Edit</button>
+                <button onclick="deleteWorkout(this)" type="button">Delete</button> 
             </div>
             `)
         }
     );
+
+    workoutContainer.innerHTML += (`
+    <div>
+        <button onclick="clearForm(this)" type="button">Delete All Movements</button>
+    </div>
+    `);
 };
 
 const deleteWorkout = (buttonEl) => {
