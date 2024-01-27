@@ -23,18 +23,18 @@ let userData = {
     workoutCurrentTime: 0,
   };
 
-const renderWorkouts = (array) => {
-    const workoutsHTML = array
-      .map((workout)=> {
-        return `
-        <li id="workout-${workout.id}" class="workout-list">
-            <button class="workout-list-info">
-                <span class="workout-list-movement">${workout.movement}</span>
-            </button>
-        </li>
-      `;
-    }).join("");
-    workoutList.innerHTML = workoutsHTML;
-};
+// const renderWorkouts = (array) => {
+//     const workoutsHTML = array
+//       .map((workout)=> {
+//         return `
+//         <li id="workout-${workout.id}" class="workout-list">
+//             <button class="workout-list-info">
+//                 <span class="workout-list-movement">${workout.movement}</span>
+//             </button>
+//         </li>
+//       `;
+//     }).join("");
+//     workoutList.innerHTML = workoutsHTML;
+// };
 
-renderWorkouts(userData?.workouts);
+// renderWorkouts(userData?.workouts);

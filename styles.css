@@ -1,125 +1,68 @@
-h1, form, a, h3, ul, li {
+h1, form, h3, ul, li {
     text-align: center;
 }
 
+h3 {
+  margin-left: 160px;
+}
+
 body {
-    width: 80%;
-  background-color: burlywood;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  max-width: 500px;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.content {
+  display: flex; 
+  flex-direction: row;
+}
+/* The sidebar menu */
+.sidenav {
+  /* height: 100%; Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  /* top: 0; Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+a {
+  color: #f5f6f7;
 }
 
 .hide {
     display: none;
   }
 
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid rgb(59, 59, 79);
+  border-left: 3px solid rgb(59, 59, 79);
+  margin-left: 160px;
+}
 
-/* <!-- Delete --!> */
-.button1 {
-    background: transparent;
-    border: none;
-    color: var(--primary-color);
-    cursor: pointer;
-    font-size: var(--root-font-size);
-    outline-color: var(--highlight-color);
-    text-align: center;
-  }
-.playlist-song {
-    outline-color: var(--highlight-color);
-  }
-  
-  .playlist li:not(:last-child) {
-    border-bottom: 1px solid var(--background-color);
-  }
-  
-  button:focus,
-  .playlist-song:focus {
-    outline-style: dashed;
-    outline-width: 2px;
-  }
-  
-  /* Playlist */
-  .playlist {
-    height: auto;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-  }
-  
-  #playlist-songs {
-    width: 430px;
-    height: 100%;
-    background-color: var(--foreground-color);
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
-    padding: 8px 9px;
-    visibility: visible;
-    justify-content: start;
-    list-style: none;
-  }
-  
-  .playlist-song {
-    display: flex;
-    height: 55px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-  }
-.playlist-song-info {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    column-gap: 7px;
-    padding: 5px 0;
-    font-family: var(--font-family);
-  }
-  
-  #player-song-title,
-  #player-song-artist {
-    margin: 0;
-  }
-  
-  #player-song-artist {
-    color: var(--highlight-color);
-    font-size: 0.75rem;
-  }
-  
-  #player-song-title {
-    font-size: 1.125rem;
-  }
-  
-  .playlist-song-title {
-    font-size: 0.85rem;
-    width: 241px;
-    text-align: left;
-  }
-  
-  .playlist-song-artist {
-    font-size: 0.725rem;
-    width: 80px;
-  }
-  
-  .playlist-song-duration {
-    font-size: 0.725rem;
-    margin: auto;
-    font-family: var(--font-headline);
-    width: 30px;
-  }
-  
-  .playlist-song-delete {
-    padding: 0;
-    width: 20px;
-    height: 20px;
-  }
-  
-  .playlist-song-delete,
-  .playlist-song-delete {
-    fill: var(--foreground-color);
-  }
+#workoutList {
+  color: white;
+  width: 300px;
+  border: 5px solid var(--yellow);
+  border-radius: 8px;
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+  margin-right: auto;
+  overflow-y: auto;
+}
